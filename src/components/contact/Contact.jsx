@@ -4,6 +4,8 @@ import {MdOutlineMarkEmailRead} from 'react-icons/md'
 import {FaWhatsapp} from 'react-icons/fa'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import AVTR5 from '../../assets/avatar5.jpg'
+import {BsWhatsapp} from 'react-icons/bs'
 
 const Contact = () => {
 
@@ -23,27 +25,28 @@ const Contact = () => {
 
       <div className="container contact__container">
 
+        
+      <form>
+          <div className="input-row">
+              <input type="text" name='name' placeholder='Nombre Completo' required />
+              <input type="email" name="email" placeholder='Correo Electronico' required />
+              
+          </div>
+          <input type="text" name='compania' placeholder='Compañía' required />
+          <textarea name="message" rows="7" placeholder='Me gustaría tener un precio especial en este producto:' required></textarea>
+          <button type='submit' className='btn btn-primary'>Enviar</button>
+      </form>
+
         <div className="contact__options">
           <article className="contact__option">
-            <MdOutlineMarkEmailRead className='contact__option-icon'/>
-            <h4>Email</h4>
-            <h5>davidglezm2015@gmail.com</h5>
-            <a href="mailto:davidglezm2015@gmail.com" target="_blank">Enviar Mensaje</a>
-          </article>
-
-          <article className="contact__option">
-            <FaWhatsapp className='contact__option-icon'/>
-            <h4>Whatsapp</h4>
-            <h5>(+52) 55 4061-3200</h5>
-            <a href="https://api.whatsapp.com//send?phone=5540613200" target="_blank">Contactar</a>
+          <div className="client__avatar">
+                <img src={AVTR5} alt="" />
+              </div>
+            <h4>Javier Arzate</h4>
+            <a href="https://api.whatsapp.com//send?phone=5570081678" target="_blank" className='btn'><BsWhatsapp/> Whatsapp</a> <br />
+            <a className='btn btn-primary' href=''>Contactame</a>
           </article>
         </div>
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Nombre Completo' required />
-          <input type="email" name="email" placeholder='Correo Electronico' required />
-          <textarea name="message" rows="7" placeholder='Mensaje' required></textarea>
-          <button type='submit' className='btn btn-primary'>Enviar</button>
-        </form>
 
       </div>
     </section>

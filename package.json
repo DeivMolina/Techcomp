@@ -1,6 +1,6 @@
 {
-  "name": "react-portafolio-dms",
-  "homepage": "http://dm-series.online",
+  "name": "techcomp",
+  "homepage": "https://rkcreativo.com.mx/techcomp/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build --base=./",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
