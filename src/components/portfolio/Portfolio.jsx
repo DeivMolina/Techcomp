@@ -44,7 +44,7 @@ const data = [
   {
     id: 5,
     image: IMG2,
-    tittle: 'EDINBURGH INSTRUMENTS™',
+    tittle: 'DYNAMICA™',
     github: 'https://github.com/DeivMolina',
     demo: 'https://inap.mx'
   },
@@ -54,14 +54,14 @@ const data = [
     tittle: 'SCION INSTRUMENTS™',
     github: 'https://github.com/DeivMolina',
     demo: 'https://despachoatm.com'
+  },
+  {
+    id: 7,
+    image: IMG4,
+    tittle: 'PRECISA™',
+    github: 'https://github.com/DeivMolina',
+    demo: 'https://molina-consultores.com'
   }
-  // {
-  //   id: 7,
-  //   image: IMG4,
-  //   tittle: 'Molina Consultores <Web-site />',
-  //   github: 'https://github.com/DeivMolina',
-  //   demo: 'https://molina-consultores.com'
-  // },
   // {
   //   id: 8,
   //   image: IMG8,
