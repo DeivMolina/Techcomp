@@ -37,7 +37,7 @@ header{
 
 .me {
     background: linear-gradient(var(--color-primary), transparent);
-    width: 35em;
+    width: 70em;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -85,20 +85,30 @@ button {
 
 /*MEDIA QUERYS*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     header{
         height: 100vh;
 
     }
 
     .me{
-        width: 20rem;
+        width: 50rem;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) and (min-width: 700px) {
+    .me {
+        width: 40rem;
+    }
+
     header{
-        height: 80vh;
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 699px) and (min-width: 300px) {
+    header{
+        height: 60vh;
     }
     
 
@@ -107,6 +117,6 @@ button {
     }
 
     .me{
-        width: 15rem;
+        width: 30rem;
     }
 }

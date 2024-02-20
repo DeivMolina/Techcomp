@@ -47,4 +47,8 @@
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
+    section {
+        margin-bottom: 13rem;
+    }
  }
