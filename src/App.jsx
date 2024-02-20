@@ -21,8 +21,8 @@ const MainContainer = styled.div`
 const App = () => {
   return (
     <MainContainer>
-      <NieveComponente />
       <Header />
+      <NieveComponente />
       <Nav />
       <Portfolio />
       <Contact />
@@ -30,5 +30,6 @@ const App = () => {
     </MainContainer>
   );
 };
+
 
 export default App
