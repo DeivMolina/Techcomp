@@ -1,5 +1,5 @@
 footer{
-    background: var(--color-primary);
+    background: var(--color-white);
     padding: 3rem 0;
     text-align: center;
     font-size: 0.9rem;
@@ -44,8 +44,20 @@ footer a{
 
 .footer__socials a:hover{
     background: transparent;
-    color: var(--color-bg);
-    border-color: var(--color-bg);
+    color: var(--color-bg-variant);
+    border-color: var(--color-bg-variant);
+}
+
+.permalinks a:hover{
+    background: transparent;
+    color: var(--color-bg-variant);
+    border-color: var(--color-bg-variant);
+}
+
+.footer__logo a:hover{
+    background: transparent;
+    color: var(--color-bg-variant);
+    border-color: var(--color-bg-variant);
 }
 
 .footer__copyright{

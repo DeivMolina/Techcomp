@@ -37,7 +37,7 @@ header{
 
 .me {
     background: linear-gradient(var(--color-primary), transparent);
-    width: 70em;
+    width: calc(100vw - 40rem); /* Ancho automático con márgenes laterales de 1rem */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -51,7 +51,9 @@ header{
     border-top-right-radius: 10px; /* Bordes redondeados en la esquina superior derecha */
 }
 
+
 .me img {
+    height: 500px;
     max-width: 100%;
     margin-bottom: 1rem;
 }
@@ -70,7 +72,7 @@ button {
 
 
 .logo {
-    width: 60%;
+    width: 40%;
     margin: 0 auto; /* Esto centra horizontalmente el div */
   }
 
@@ -87,28 +89,37 @@ button {
 
 @media screen and (max-width: 1200px) {
     header{
-        height: 100vh;
+        height: 90vh;
 
     }
 
+    .me img {
+        height: 100%;
+    }
+
     .me{
-        width: 50rem;
+        width: calc(100vw - 30rem)
     }
 }
 
 @media screen and (max-width: 900px) and (min-width: 700px) {
-    .me {
-        width: 40rem;
+    
+    header{
+        height: 100vh;
     }
 
-    header{
-        height: 70vh;
+    .me{
+        width: calc(100vw - 20rem)
+    }
+
+    .me img {
+        height: 100%;
     }
 }
 
 @media screen and (max-width: 699px) and (min-width: 300px) {
     header{
-        height: 60vh;
+        height: 80vh;
     }
     
 
@@ -117,6 +128,17 @@ button {
     }
 
     .me{
-        width: 30rem;
+        width: calc(100vw - 5rem);
+        
     }
+
+    .me img {
+        height: 100%;
+    }
+
+    .logo {
+        width: 100%;
+      }
+
+  
 }

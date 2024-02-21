@@ -41,6 +41,7 @@ form{
     flex-direction: column;
     gap: 1.2rem;
 }
+
 form .input-row {
     display: flex;
     justify-content: space-between;
@@ -48,7 +49,13 @@ form .input-row {
     gap: 1rem;
 }
 
+form input::placeholder,
+form textarea::placeholder {
+  color: white; /* Cambia el color del placeholder a blanco */
+}
+
 input, textarea{
+    font-family: sans-serif;
     width: 100%;
     padding: 1rem;
     border-radius: 0.5rem;

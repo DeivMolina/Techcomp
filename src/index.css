@@ -12,9 +12,9 @@
 }
 
 :root{
-    --color-bg: #0a0a28;
-    --color-bg-variant: #114E7C;
-    --color-primary: #6EC1E4;
+    --color-bg: #043268;
+    --color-bg-variant: #086eb4;
+    --color-primary: #d1dae8;
     --color-primary-variant: rgba(139, 153, 255, 0.671);
     --color-white: #fff;
     --color-light: rgb(255, 255, 255, 0.6);
@@ -34,13 +34,13 @@ html{
     display: none;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
     background-image: url(../src/assets/bg-texture.png);
-}
+    background: linear-gradient(to bottom, #043268, #086eb4);
+  }
 
 /*STYLES GENERALES*/
 
@@ -58,7 +58,7 @@ h1 {
 }
 
 section {
-    margin-top: 8rem;
+    margin-top: 2rem;
 
 }
 
