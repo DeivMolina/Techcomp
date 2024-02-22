@@ -3,16 +3,16 @@ import { useEffect } from 'react';
 export const NieveEffect = ({canvasRef}) => {
   
   let flakes = [];
-  let mX = -100;
+  let mX = 100;
   let mY = -100;
 
   const reset = (flake) => {
-    flake.x = Math.floor(Math.random() * window.innerWidth);
+    flake.x = Math.floor(Math.random() * canvasRef.current.width);
     flake.y = 0;
     flake.size = (Math.random() * 3) + 2;
     flake.speed = (Math.random() * 1) + 0.3;
     flake.velY = flake.speed;
-    flake.velX = 2;
+    flake.velX = 0;
     flake.opacity = (Math.random() * 0.5) + 0.3;
   };
 
@@ -96,7 +96,7 @@ export const NieveEffect = ({canvasRef}) => {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    canvas.width = window.innerWidth;
+    canvas.width = canvas.parentElement.offsetWidth; // Ajuste del ancho del lienzo
     canvas.height = window.innerHeight;
 
     const handleMouseMove = (e) => {

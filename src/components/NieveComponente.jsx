@@ -5,8 +5,9 @@ export function NieveComponente() {
   const canvasRef = useRef(null);
   return (
     <Container >
+      <canvas ref={canvasRef}></canvas>
       <NieveEffect canvasRef={canvasRef} />
-    </Container>
+  </Container>
   );
 }
 const Container = styled.div`
@@ -23,3 +24,4 @@ const Container = styled.div`
     left: 0;
   }
 `;
+
