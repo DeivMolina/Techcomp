@@ -5,7 +5,6 @@ export function NieveComponente() {
   const canvasRef = useRef(null);
   return (
     <Container >
-      <canvas ref={canvasRef}></canvas>
       <NieveEffect canvasRef={canvasRef} />
     </Container>
   );
