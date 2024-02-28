@@ -19,7 +19,7 @@ const Header = () => {
         <div className="me">
             <img src={PRODUCT} alt="me" />
               <div className="content">
-                <p>Conoce las promociones de Ultracongeladores</p><br />
+                <p className='paragraph'>Conoce las <span className='paragraph-span'>promociones</span> de Ultracongeladores</p><br />
                 <div className="buttons-container">
                   <a href="https://techcomp-instruments.com/froilabo/?lang=es" target="_blank" className='btn'>Conoce más</a>
                   <a className='btn btn-primary' href="https://api.whatsapp.com/send?phone=5570081678&text=Hola,%20*¡Quiero%20cambiar%20mi%20ultracongelador!*" target="_blank">Solicitar información</a>

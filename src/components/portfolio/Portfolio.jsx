@@ -55,7 +55,7 @@ const data = [
   {
     id: 6,
     image: IMG3,
-    tittle: 'Scion Instruments B.V. expertos en cromatografía de gases, analizadores y espectrometría de masas de cuadrupolo simple .',
+    tittle: 'Scion Instruments B.V. expertos en cromatografía de gases, analizadores y espectrometría de masas de cuadrupolo simple.',
     link: 'https://techcomp-instruments.com/dynamica/?lang=es',
     github: 'https://github.com/DeivMolina',
     demo: 'https://despachoatm.com'
@@ -124,8 +124,7 @@ const data = [
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <h5>Nuestras</h5>
-      <h2>Compañias</h2>
+      <h1 className='title-portfolio'>Nuestras Compañias</h1>
 
       <div className="container portfolio__container">
         {
