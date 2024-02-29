@@ -29,7 +29,7 @@ const Contact = () => {
       <form>
           <div className="input-row">
               <input type="text" name='name' placeholder='Nombre Completo' className='placeholder' required />
-              <input type="email" name="email" placeholder='Correo Electronico' className='placeholder' required />
+              <input type="email" name="email" placeholder='Correo electrónico' className='placeholder' required />
               
           </div>
           <input type="text" name='compania' placeholder='Empresa' className='placeholder' required />
@@ -44,7 +44,7 @@ const Contact = () => {
               </div>
             <h4>Javier Arzate</h4>
             <a href="https://api.whatsapp.com/send?phone=5546208617&text=Hola,%20*¡Quiero%20cambiar%20mi%20ultracongelador!*" target="_blank" className='btn-wts'><BsWhatsapp/> Whatsapp</a> <br />
-            <a className='btn btn-primary' href='tel:5526280111'>Contactame</a>
+            <a className='btn btn-primary' href='tel:5526280111'>Contáctame</a>
           </article>
         </div>
 
