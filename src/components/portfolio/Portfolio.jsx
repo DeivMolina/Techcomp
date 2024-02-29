@@ -124,7 +124,7 @@ const data = [
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <h1 className='title-portfolio'>Nuestras Compañias</h1>
+      <h3 className='title-portfolio'>Nuestras Compañias</h3>
 
       <div className="container portfolio__container">
         {

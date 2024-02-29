@@ -20,21 +20,21 @@ const Contact = () => {
 
   return (
     <section id='contact'>
-      <h5>Póngase en contacto</h5>
-      <h2>Contactame</h2>
+      <h3 className='title-contact'>Póngase en contacto</h3>
+      <h2 >Estamos para servirle</h2><br />
 
       <div className="container contact__container">
 
         
       <form>
           <div className="input-row">
-              <input type="text" name='name' placeholder='Nombre Completo' required />
-              <input type="email" name="email" placeholder='Correo Electronico' required />
+              <input type="text" name='name' placeholder='Nombre Completo' className='placeholder' required />
+              <input type="email" name="email" placeholder='Correo Electronico' className='placeholder' required />
               
           </div>
-          <input type="text" name='compania' placeholder='Compañía' required />
-          <textarea name="message" rows="7" placeholder='Me gustaría tener un precio especial en este producto:' required></textarea>
-          <button type='submit' className='btn btn-primary'>Enviar</button>
+          <input type="text" name='compania' placeholder='Empresa' className='placeholder' required />
+          <textarea name="message" rows="7" placeholder='Me gustaría tener un precio especial en este producto:' className='placeholder' required></textarea>
+          <button type='submit' className='btn-secondary'>Enviar</button>
       </form>
 
         <div className="contact__options">
@@ -43,8 +43,8 @@ const Contact = () => {
                 <img src={AVTR5} alt="" />
               </div>
             <h4>Javier Arzate</h4>
-            <a href="https://api.whatsapp.com//send?phone=5570081678" target="_blank" className='btn'><BsWhatsapp/> Whatsapp</a> <br />
-            <a className='btn btn-primary' href=''>Contactame</a>
+            <a href="https://api.whatsapp.com/send?phone=5546208617&text=Hola,%20*¡Quiero%20cambiar%20mi%20ultracongelador!*" target="_blank" className='btn-wts'><BsWhatsapp/> Whatsapp</a> <br />
+            <a className='btn btn-primary' href='tel:5526280111'>Contactame</a>
           </article>
         </div>
 

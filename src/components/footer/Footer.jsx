@@ -18,14 +18,14 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="footer-column">
           <a href='https://maps.app.goo.gl/gUJFjCdr4vdmkkRE6'>
-          <p><FiMapPin /> AV. Gustavo Baz no. 2160 esq. Mario Colin Colonia La Loma CP 54060 Tlalnepantla de Baz, Estado de México</p>
+          <p><FiMapPin /> AV. Gustavo Baz no. 2160 esq. Mario Colin Colonia La Loma CP 54060 <br /> Tlalnepantla de Baz, Estado de México</p>
           </a><br />
           <p>Aviso de Privacidad</p>
         </div>
       </div>
       <hr />
       <div className="disclaimer">
-        <p>Creado por<em>Rocky Creativo</em></p>
+        <p>Pagina desarrollada por<em> Rocky Creativo</em></p>
       </div>
     </footer>
   )

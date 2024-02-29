@@ -12,7 +12,7 @@
 }
 
 .contact__option{
-    background: var(--color-bg-variant);
+    background: var(--color-bg-secondary);
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
@@ -22,7 +22,7 @@
 
 .contact__option:hover{
     background: transparent;
-    border-color: var(--color-primary-variant);
+    border-color: var(--color-bg-secondary);
 }
 
 .contact__option-icon{
@@ -36,10 +36,51 @@
     font-size: 0.8rem;
 }
 
+.title-contact{
+    text-align: center;
+    font-size: 30px;
+}
+
 form{
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+}
+
+.btn-wts{
+    width: max-content;
+    display: inline-block;
+    background:var(--color-secondary);
+    color: #013b34;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid #013b34;
+    transition: var(--transition);
+}
+
+.btn-wts:hover{
+    background: none;
+    color:var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+.btn-secondary{
+    width: max-content;
+    display: inline-block;
+    background:var(--color-third);
+    color: #ffffff;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid #5d290b;
+    transition: var(--transition);
+}
+
+.btn-secondary:hover{
+    background: none;
+    color:var(--color-white);
+    border-color: var(--color-white);
 }
 
 form .input-row {
@@ -63,6 +104,10 @@ input, textarea{
     border: 2px solid var(--color-primary-variant);
     resize: none;
     color: var(--color-white);
+}
+
+.placeholder{
+    font-size: 16px;
 }
 
 

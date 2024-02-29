@@ -31,3 +31,17 @@ nav a.active{
     background: var(--color-bg);
     color: var(--color-white);
 }
+
+/* Estilos para pantallas con un ancho máximo de 600px */
+@media (max-width: 600px) {
+    nav {
+      display: flex;
+    }
+  }
+  
+  /* Estilos para pantallas con un ancho mínimo de 601px */
+  @media (min-width: 601px) {
+    nav {
+      display: none; /* Para ocultar el nav en pantallas más grandes */
+    }
+  }
