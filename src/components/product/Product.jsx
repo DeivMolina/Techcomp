@@ -1,142 +1,176 @@
 import React from 'react'
 import './product.css'
-import IMG1 from '../../assets/portfolio1.png'
-import IMG2 from '../../assets/portfolio2.png'
-import IMG3 from '../../assets/portfolio3.png'
-import IMG4 from '../../assets/portfolio4.png'
-import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
-import IMG7 from '../../assets/portfolio7.jpg'
-import IMG8 from '../../assets/portfolio8.jpg'
-import IMG9 from '../../assets/portfolio9.png'
-import IMG10 from '../../assets/portfolio10.jpg'
-import IMG11 from '../../assets/portfolio11.png'
+import IMG1 from '../../assets/products/ultracongelador-evolution-690-L-friolabo-techcomp-latino-2024.png'
+import IMG2 from '../../assets/products/ultracongelador-evolucion-690-L-modelo-especial-friolabo-techcomp-latino-2024.png'
+import IMG3 from '../../assets/products/ultracongelador-trust-340-L-friolabo-techcomp-latino-2024.png'
+import IMG4 from '../../assets/products/ultracongelador-trust-515-L-friolabo-techcomp-latino-2024.png'
+import IMG5 from '../../assets/products/ultracongelador-trust-690-L-friolabo-techcomp-latino-2024.png'
+import IMG6 from '../../assets/products/horno-de-conveccion-forzada-Air-performance-60-L-friolabo-techcomp-latino-2024.png'
+import IMG7 from '../../assets/products/horno-de-conveccion-forzada-Air-performance-120-L-friolabo-techcomp-latino-2024.png'
+import IMG8 from '../../assets/products/horno-de-conveccion-forzada-Air-performance-240-L-friolabo-techcomp-latino-2024.png'
+import IMG9 from '../../assets/products/incubadora-de-conveccion-forzada-bio-expert-60-L-friolabo-techcomp-latino-2024.png'
+import IMG10 from '../../assets/products/incubadora-de-conveccion-forzada-bio-expert-120-L-friolabo-techcomp-latino-2024.png'
+import IMG11 from '../../assets/products/incubadora-de-conveccion-forzada-bio-refrigerated-expert-60-L-friolabo-techcomp-latino-2024.png'
+
 
 const data = [
-    // {
-    //   id: 1,
-    //   image: IMG14,
-    //   tittle: 'ECHE <Web-Site />',
-    //   github: 'https://github.com/DeivMolina',
-    //   demo: 'https://eche.com.mx'
-    // },
-    // {
-    //   id: 2,
-    //   image: IMG13,
-    //   tittle: 'BeFocused <Web-Site />',
-    //   github: 'https://github.com/DeivMolina',
-    //   demo: 'https://befocused.panduitlatam.com'
-    // },
-    // {
-    //   id: 3,
-    //   image: IMG12,
-    //   tittle: 'Caña de Oro <Web-Site />',
-    //   github: 'https://github.com/DeivMolina',
-    //   demo: 'https://canadeoro.com.mx'
-    // },
     {
-      id: 4,
+      id: 1,
       image: IMG1,
-      tittle: 'Froilabo especializada en tecnologías de Ultra Baja Temperatura.',
-      link: 'https://techcomp-instruments.com/froilabo/?lang=es',
-      github: 'https://github.com/DeivMolina',
-      demo: 'https://asglasociados.com.mx'
+      title: 'Ultracongelador EVOLUTION 690 L',
+      bullets: [
+        'Capacidad de 690 L (24.3 Pies)',
+        'Pantalla Táctil a Color con alarma visual y audible',
+        'Sistema exclusivo BoSS® de prevención contra descargas eléctricas',
+        'Garantía de 2 años en general, 5 años en compresores y 10 años en sistema de aislamiento al vacio VIP®'
+      ]
     }
     ,
-    
+    {
+      id: 2,
+      image: IMG2,
+      title: 'Ultracongelador EVOLUTION 690 L',
+      bullets: [
+        'Capacidad de 690 L (24.3 Pies)',
+        'Pantalla Táctil a Color con alarma visual y audible',
+        'Sistema exclusivo BoSS® de prevención contra descargas eléctricas',
+        'Paneles de Cryo preservación Integrado con autonomía de 6 horas'
+      ]
+    }
+    ,
+    {
+      id: 3,
+      image: IMG3,
+      title: 'Ultracongelador TRUST 340 L',
+      bullets: [
+        'Capacidad de 340 L (12 Pies)',
+        'Display dual digital LCD con alarma visual y audible',
+        'Incluye 1 bandeja de acero inoxidable, 1 filtro contra polvo & 1 espátula de remoción de escarcha.',
+        'Garantía de 2 años en general, 5 años en compresores y 10 años en sistema de aislamiento al vacio VIP®'
+      ]
+    }
+    ,
+    {
+      id: 4,
+      image: IMG4,
+      title: 'Ultracongelador TRUST 515 L',
+      bullets: [
+        'Capacidad de 515 L (18.1 Pies)',
+        'Display dual digital LCD con alarma visual y audible',
+        'Incluye 1 bandeja de acero inoxidable, 1 filtro contra polvo & 1 espátula de remoción de escarcha.',
+        'Garantía de 2 años en general, 5 años en compresores y 10 años en sistema de aislamiento al vacio VIP®'
+      ]
+    }
+    ,
     {
       id: 5,
-      image: IMG2,
-      tittle: 'Dynamica, que suministra una amplia gama de instrumentos analíticos y de laboratorio.',
-      link: 'https://techcomp-instruments.com/dynamica/?lang=es',
-      github: 'https://github.com/DeivMolina',
-      demo: 'https://inap.mx'
-    },
+      image: IMG5,
+      title: 'Ultracongelador TRUST 690 L',
+      bullets: [
+        'Capacidad de 690 L (24.3 Pies)',
+        'Display dual digital LCD con alarma visual y audible',
+        'Incluye 3 bandejas de acero inoxidable, 1 filtro contra polvo & 1 espátula de remoción de escarcha.',
+        'Garantía de 2 años en general, 5 años en compresores y 10 años en sistema de aislamiento al vacio VIP®'
+      ]
+    }
+    ,
     {
       id: 6,
-      image: IMG3,
-      tittle: 'Scion Instruments B.V. expertos en cromatografía de gases, analizadores y espectrometría de masas de cuadrupolo simple.',
-      link: 'https://techcomp-instruments.com/dynamica/?lang=es',
-      github: 'https://github.com/DeivMolina',
-      demo: 'https://despachoatm.com'
-    },
+      image: IMG6,
+      title: 'Horno de Convección Forzada Air Performance 60 L',
+      bullets: [
+        'Capacidad de 56 L',
+        'Control de temperatura ambiente + 10°C a 250 °C y precisión 0.1 °C.',
+        'Display dual digital LCD',
+        'Diseño de cierre de puertas Hands Free®'
+      ]
+    }
+    ,
     {
       id: 7,
-      image: IMG4,
-      tittle: 'Precisa que ofrece una gama completa de soluciones de pesaje y metrología de alta precisión',
-      link: 'https://techcomp-instruments.com/precisa/?lang=es',
-      github: 'https://github.com/DeivMolina',
-      demo: 'https://molina-consultores.com'
+      image: IMG7,
+      title: 'Horno de Convección Forzada Air Performance 120 L',
+      bullets: [
+        'Capacidad de 116 L',
+        'Control de temperatura ambiente + 10°C a 250 °C y precisión 0.1 °C.',
+        'Display dual digital LCD',
+        'Diseño de cierre de puertas Hands Free®'
+      ]
     }
-    // {
-    //   id: 8,
-    //   image: IMG8,
-    //   tittle: 'Grupo Inders <E-commerce />',
-    //   github: 'https://github.com/DeivMolina',
-    //   demo: 'https://inders.com.mx'
-     
-    // },
-    // {
-    //   id: 9,
-    //   image: IMG11,
-    //   tittle: 'Hydra Consultores <Web-site />',
-    //   github: 'https://hydraconsultores.com.mx',
-    //   demo: 'https://inders.com.mx'
-     
-    // },
-    // {
-    //   id: 10,
-    //   image: IMG6,
-    //   tittle: 'Planilla Dorada <Web-Site />',
-    //   github: 'https://github.com/DeivMolina',
-    //   // demo: 'http://planilla-dorada.com'
-    // },
-    // {
-    //   id: 11,
-    //   image: IMG7,
-    //   tittle: 'Alearth <E-Commerce />',
-    //   github: 'https://github.com/DeivMolina',
-    //   // demo: 'https://www.dm-series.online'
-    // },
-    // {
-    //   id: 12,
-    //   image: IMG5,
-    //   tittle: 'Law Soluciones Legales <Web-Site />',
-    //   github: 'https://github.com/DeivMolina',
-    //   // demo: 'https://www.lawsolucioneslegales.com'
-    // },
-    // {
-    //   id: 13,
-    //   image: IMG9,
-    //   tittle: 'Bliblioteca UTN <Sistema de Inventario />',
-    //   github: 'https://github.com/DeivMolina',
-    //   // demo: 'https://www.dm-series.online'
-    // },
-    // {
-    //   id: 14,
-    //   image: IMG10,
-    //   tittle: 'Reach QR <Sistema In:Out />',
-    //   github: 'https://github.com/DeivMolina',
-    //   // demo: 'https://www.dm-series.online'
-    // }
+    ,
+    {
+      id: 8,
+      image: IMG8,
+      title: 'Horno de Convección Forzada Air Performance 240 L',
+      bullets: [
+        'Capacidad de 230 L',
+        'Control de temperatura ambiente + 10°C a 250 °C y precisión 0.1 °C.',
+        'Display dual digital LCD',
+        'Diseño de cierre de puertas Hands Free®'
+      ]
+    }
+    ,
+    {
+      id: 9,
+      image: IMG9,
+      title: 'Incubadora de Convección ForzadaBio Expert 60 L',
+      bullets: [
+        'Capacidad de 56 L',
+        'Control de temperatura ambiente + 5°C a 100 °C y precisión 0.1 °C.',
+        'Display dual digital LCD',
+        'Sistema exclusivo de descontaminación térmica por calor seco a 160 ° C'
+      ]
+    }
+    ,
+    {
+      id: 10,
+      image: IMG10,
+      title: 'Incubadora de Convección ForzadaBio Expert 120 L',
+      bullets: [
+        'Capacidad de 114 L',
+        'Control de temperatura ambiente + 5°C a 100 °C y precisión 0.1 °C.',
+        'Display dual digital LCD',
+        'Sistema exclusivo de descontaminación térmica por calor seco a 160 ° C'
+      ]
+    }
+    ,
+    {
+      id: 11,
+      image: IMG11,
+      title: 'Incubadora de Convección ForzadaBio Expert 120 L',
+      bullets: [
+        'Capacidad de 56 L',
+        'Control desde 0°C a 100 °C y precisión 0.1 °C.',
+        'Display dual digital LCD',
+        'Sistema exclusivo de descontaminación térmica por calor seco a 160 ° C'
+      ]
+    }
+
+    
   ]
 
 const Product = () => {
   return (
     <section id='product'>
-      <h3 className='title-product'>Nuestras Compañias</h3>
+      <h3 className='title-product'>Nuestros Productos</h3>
 
       <div className="container product__container">
         {
-          data.map(({id, image,link, tittle, github, demo}) => {
+          data.map(({id, image, title, bullets}) => {
             return (
               <article key={id} className="product__item">
-                <a target='_blank' href={link}>
+                
                   <div className="product__item-image">
-                    <img src={image} alt={tittle} />
+                    <img src={image} alt={title} />
                   </div>
-                </a>
-                  <p dangerouslySetInnerHTML={{ __html: tittle }}></p>
+                
+                  <p className='product__title' dangerouslySetInnerHTML={{ __html: title }}></p>
+                    <ul className="bullets">
+                      {bullets.map((bullet, index) => (
+                        <li key={index}>- {bullet}</li>
+                      ))}
+                    </ul>
+                    
                 
               </article>
             )
