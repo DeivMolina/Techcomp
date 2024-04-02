@@ -25,8 +25,8 @@ const App = () => {
       <Header />
       <NieveComponente />
       <Nav />
-      <Portfolio />
       <Product />
+      <Portfolio />
       <Contact />
       <Footer />
     </MainContainer>
