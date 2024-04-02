@@ -1,6 +1,4 @@
 .product__container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
 }
 
@@ -15,7 +13,21 @@
 .title-product{
     text-align: center;
     margin-bottom: 1rem;
+    margin-top: 2rem;
     font-size: 30px;
+    font-weight: 700;
+}
+
+.subtitle-product{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.paragraph-product{
+    text-align: center;
+    font-size: 18px;
 }
 
 .product__item:hover{
@@ -65,3 +77,7 @@
     }
 
  }
+
+ .slick-dots {
+    display: none;
+  }

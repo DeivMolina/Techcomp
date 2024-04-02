@@ -1,5 +1,9 @@
 import React from 'react'
 import './product.css'
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import IMG1 from '../../assets/products/ultracongelador-evolution-690-L-friolabo-techcomp-latino-2024.png'
 import IMG2 from '../../assets/products/ultracongelador-evolucion-690-L-modelo-especial-friolabo-techcomp-latino-2024.png'
 import IMG3 from '../../assets/products/ultracongelador-trust-340-L-friolabo-techcomp-latino-2024.png'
@@ -150,34 +154,62 @@ const data = [
   ]
 
 const Product = () => {
-  return (
-    <section id='product'>
-      <h3 className='title-product'>Nuestros Productos</h3>
-
-      <div className="container product__container">
-        {
-          data.map(({id, image, title, bullets}) => {
-            return (
-              <article key={id} className="product__item">
-                
-                  <div className="product__item-image">
-                    <img src={image} alt={title} />
-                  </div>
-                
-                  <p className='product__title' dangerouslySetInnerHTML={{ __html: title }}></p>
-                    <ul className="bullets">
-                      {bullets.map((bullet, index) => (
-                        <li key={index}>- {bullet}</li>
-                      ))}
-                    </ul>
-                    
-                
-              </article>
-            )
-          })
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024, // Cuando el ancho de la pantalla es igual o menor a 1024px
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
         }
-      </div>
-    </section>
+      },
+      {
+        breakpoint: 600, // Cuando el ancho de la pantalla es igual o menor a 600px
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+  
+  return (
+    <div>
+      <section id='product'>
+        <h3 className='title-product'>PRODUCTOS PARTICIPANTES</h3>
+        <div className="container product__container">
+          <Slider {...settings}>
+            {
+              data.map(({id, image, title, bullets}) => {
+                return (
+                  <article key={id} className="product__item">
+                      <div className="product__item-image">
+                        <img src={image} alt={title} />
+                      </div>
+                      <p className='product__title' dangerouslySetInnerHTML={{ __html: title }}></p>
+                        <ul className="bullets">
+                          {bullets.map((bullet, index) => (
+                            <li key={index}>- {bullet}</li>
+                          ))}
+                        </ul>
+                  </article>
+                )
+              })
+            }
+          </Slider>
+        </div>
+      </section>
+      <h4 className='subtitle-product'>Incluye gastos de envío a la CDMX y Área Metropolitana *</h4>
+      <p className='paragraph-product'><em>*Consultar con su ejecutivo otras ciudades disponibles</em></p>
+    </div>
+    
   )
 }
 

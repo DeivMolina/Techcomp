@@ -62,7 +62,7 @@ h1 {
 }
 
 section {
-    margin-top: 2rem;
+    margin-top: 3rem;
 
 }
 
@@ -137,3 +137,11 @@ img{
         margin-top: 2em;
     }
 }
+
+.slick-slide > div {
+    margin: 0 10px;
+}
+
+.slick-dots {
+    display: none;
+  }
