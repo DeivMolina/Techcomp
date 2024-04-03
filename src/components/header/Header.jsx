@@ -17,7 +17,7 @@ const Header = () => {
           </div>
         </div>
         
-        <HeaderSocials/>
+        {/* <HeaderSocials/> */}
         <div className="me">
             <img src={PRODUCT} alt="me" />
               <div className="content">

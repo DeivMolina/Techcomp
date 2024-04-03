@@ -4,7 +4,7 @@ import {MdOutlineMarkEmailRead} from 'react-icons/md'
 import {FaWhatsapp} from 'react-icons/fa'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
-import AVTR5 from '../../assets/avatar5.jpg'
+import AVTR5 from '../../assets/Techomp_javier_arzate.png'
 import {BsWhatsapp} from 'react-icons/bs'
 
 const Contact = () => {
@@ -44,7 +44,7 @@ const Contact = () => {
               </div>
             <h4>Javier Arzate</h4>
             <a href="https://api.whatsapp.com/send?phone=5546208617&text=Hola,%20*¡Quiero%20cambiar%20mi%20ultracongelador!*" target="_blank" className='btn-wts'><BsWhatsapp/> Whatsapp</a> <br />
-            <a className='btn btn-primary' href='tel:5526280111'>Contáctame</a>
+            <a className='btn btn-primary' href='tel:5570081678'>Contáctame</a>
           </article>
         </div>
 
