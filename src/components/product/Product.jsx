@@ -206,7 +206,7 @@ const Product = () => {
           </Slider>
         </div>
       </section>
-      <h4 className='subtitle-product'>Incluye precios más IVA, gastos de envío a la CDMX y Área Metropolitana *</h4>
+      <h4 className='subtitle-product'>Incluye precios más IVA <br/> Gastos de envío a la CDMX y Área Metropolitana *</h4>
       <p className='paragraph-product'><em>*Consultar con su ejecutivo otras ciudades disponibles</em></p>
     </div>
     
