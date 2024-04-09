@@ -1,21 +1,47 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
+
 import './contact.css'
 import {MdOutlineMarkEmailRead} from 'react-icons/md'
 import {FaWhatsapp} from 'react-icons/fa'
-import { useRef } from 'react';
-import emailjs from 'emailjs-com';
 import AVTR5 from '../../assets/Techomp_javier_arzate.png'
 import {BsWhatsapp} from 'react-icons/bs'
 
 const Contact = () => {
 
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_dw2iep9', 'template_00bsoer', form.current, 'PLVe2mPiaHGqH25Tp')
-     
-    e.target.reset()
+    emailjs
+      .sendForm('service_zcb8o58', 'template_npnrjr4', form.current, {
+        publicKey: 'PLVe2mPiaHGqH25Tp',
+      })
+      .then(
+        () => {
+          // Mostrar SweetAlert de éxito
+          Swal.fire({
+            icon: 'success',
+            title: 'Mensaje enviado',
+            text: 'Tu mensaje ha sido enviado con éxito.',
+            confirmButtonColor: '#043268', // Color del botón de "OK"
+          });
+          // Limpiar el formulario después del envío exitoso (opcional)
+          form.current.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          // Mostrar SweetAlert de error (opcional)
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.',
+            confirmButtonColor: '#043268', // Color del botón de "OK"
+          });
+        }
+      );
   };
 
   return (
@@ -26,13 +52,13 @@ const Contact = () => {
       <div className="container contact__container">
 
         
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
           <div className="input-row">
               <input type="text" name='name' placeholder='Nombre Completo' className='placeholder' required />
               <input type="email" name="email" placeholder='Correo electrónico' className='placeholder' required />
               
           </div>
-          <input type="text" name='compania' placeholder='Empresa' className='placeholder' required />
+          <input type="text" name='empresa' placeholder='Empresa' className='placeholder' required />
           <textarea name="message" rows="7" placeholder='Me gustaría tener un precio especial en este producto:' className='placeholder' required></textarea>
           <button type='submit' className='btn-secondary'>Enviar</button>
       </form>
