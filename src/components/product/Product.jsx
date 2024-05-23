@@ -33,7 +33,7 @@ const data = [
     {
       id: 2,
       image: IMG2,
-      title: 'Ultracongelador EVOLUTION 690 L',
+      title: 'Ultracongelador EVOLUTION 690 L +CRYO',
       bullets: [
         'Capacidad de 690 L (24.3 Pies)',
         'Pantalla Táctil a Color con alarma visual y audible',
