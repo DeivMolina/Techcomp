@@ -15,9 +15,21 @@ import IMG8 from '../../assets/products/horno-de-conveccion-forzada-Air-performa
 import IMG9 from '../../assets/products/incubadora-de-conveccion-forzada-bio-expert-60-L-friolabo-techcomp-latino-2024.png'
 import IMG10 from '../../assets/products/incubadora-de-conveccion-forzada-bio-expert-120-L-friolabo-techcomp-latino-2024.png'
 import IMG11 from '../../assets/products/incubadora-de-conveccion-forzada-bio-refrigerated-expert-60-L-friolabo-techcomp-latino-2024.png'
+import IMG12 from '../../assets/products/Balanza-de-precisión-BJ-2100-D-friolabo-techcomp-latino-2024.png'
 
 
 const data = [
+  {
+    id: 1,
+    image: IMG12,
+    title: 'Balanza BJ2100D',
+    bullets: [
+      'Capacidad de 2 100 g',
+      'Precisión de 0.1 g',
+      '4 teclas de tara',
+      '2 años de garantía'
+    ]
+  },
     {
       id: 1,
       image: IMG1,
