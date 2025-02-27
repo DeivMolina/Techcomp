@@ -16,6 +16,8 @@ import IMG9 from '../../assets/products/incubadora-de-conveccion-forzada-bio-exp
 import IMG10 from '../../assets/products/incubadora-de-conveccion-forzada-bio-expert-120-L-friolabo-techcomp-latino-2024.png'
 import IMG11 from '../../assets/products/incubadora-de-conveccion-forzada-bio-refrigerated-expert-60-L-friolabo-techcomp-latino-2024.png'
 import IMG12 from '../../assets/products/Balanza-de-precisión-BJ-2100-D-friolabo-techcomp-latino-2024.png'
+import IMG13 from '../../assets/products/horno-de-conveccion-forzada-Air-Expert-60-L-friolabo-techcomp-latino-2024.png'
+import IMG14 from '../../assets/products/horno-de-conveccion-forzada-Air-Expert-240-L-friolabo-techcomp-latino-2024.png'
 
 
 const data = [
@@ -128,6 +130,32 @@ const data = [
     ,
     {
       id: 9,
+      image: IMG13,
+      title: 'Horno de Convección Forzada Serie Air Expert 60 L',
+      bullets: [
+        'Capacidad de 58 L',
+        'Control de temperatura ambiente + 10°C a 250 °C y precisión 0.1 °C.',
+        'Display dual digital LCD',
+        'Alarma visual y audible programable',
+        'Rampeos de temperatura de 16 segmentos por 3 ciclos'
+      ]
+    }
+    ,
+    {
+      id: 10,
+      image: IMG14,
+      title: 'Horno de Convección Forzada Serie Air Expert 240 L',
+      bullets: [
+        'Capacidad de 230 L',
+        'Control de temperatura ambiente + 10°C a 250 °C y precisión 0.1 °C.',
+        'Display dual digital LCD',
+        'Alarma visual y audible programable',
+        'Rampeos de temperatura de 16 segmentos por 3 ciclos'
+      ]
+    }
+    ,
+    {
+      id: 11,
       image: IMG9,
       title: 'Incubadora de Convección ForzadaBio Expert 60 L',
       bullets: [
@@ -139,7 +167,7 @@ const data = [
     }
     ,
     {
-      id: 10,
+      id: 12,
       image: IMG10,
       title: 'Incubadora de Convección ForzadaBio Expert 120 L',
       bullets: [
@@ -151,11 +179,11 @@ const data = [
     }
     ,
     {
-      id: 11,
+      id: 13,
       image: IMG11,
-      title: 'Incubadora de Convección ForzadaBio Expert 120 L',
+      title: 'Incubadora de Convección ForzadaBio Expert 240 L',
       bullets: [
-        'Capacidad de 56 L',
+        'Capacidad de 223 L',
         'Control desde 0°C a 100 °C y precisión 0.1 °C.',
         'Display dual digital LCD',
         'Sistema exclusivo de descontaminación térmica por calor seco a 160 ° C'
