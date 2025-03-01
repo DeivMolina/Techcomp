@@ -21,28 +21,17 @@ import IMG14 from '../../assets/products/horno-de-conveccion-forzada-Air-Expert-
 
 
 const data = [
-  {
-    id: 1,
-    image: IMG12,
-    title: 'Balanza BJ2100D',
-    bullets: [
-      'Capacidad de 2 100 g',
-      'Precisión de 0.1 g',
-      '4 teclas de tara',
-      '2 años de garantía'
-    ]
-  },
     {
       id: 1,
-      image: IMG1,
-      title: 'Ultracongelador EVOLUTION 690 L',
+      image: IMG12,
+      title: 'Balanza BJ2100D',
       bullets: [
-        'Capacidad de 690 L (24.3 Pies)',
-        'Pantalla Táctil a Color con alarma visual y audible',
-        'Sistema exclusivo BoSS® de prevención contra descargas eléctricas',
-        'Garantía de 2 años en general, 5 años en compresores y 10 años en sistema de aislamiento al vacio VIP®'
+        'Capacidad de 2 100 g',
+        'Precisión de 0.1 g',
+        '4 teclas de tara',
+        '2 años de garantía'
       ]
-    }
+    },
     ,
     {
       id: 2,
@@ -57,13 +46,25 @@ const data = [
     }
     ,
     {
-      id: 3,
-      image: IMG3,
-      title: 'Ultracongelador TRUST 340 L',
+      id: 1,
+      image: IMG1,
+      title: 'Ultracongelador EVOLUTION 690 L',
       bullets: [
-        'Capacidad de 340 L (12 Pies)',
+        'Capacidad de 690 L (24.3 Pies)',
+        'Pantalla Táctil a Color con alarma visual y audible',
+        'Sistema exclusivo BoSS® de prevención contra descargas eléctricas',
+        'Garantía de 2 años en general, 5 años en compresores y 10 años en sistema de aislamiento al vacio VIP®'
+      ]
+    }
+    ,
+    {
+      id: 5,
+      image: IMG5,
+      title: 'Ultracongelador TRUST 690 L',
+      bullets: [
+        'Capacidad de 690 L (24.3 Pies)',
         'Display dual digital LCD con alarma visual y audible',
-        'Incluye 1 bandeja de acero inoxidable, 1 filtro contra polvo & 1 espátula de remoción de escarcha.',
+        'Incluye 3 bandejas de acero inoxidable, 1 filtro contra polvo & 1 espátula de remoción de escarcha.',
         'Garantía de 2 años en general, 5 años en compresores y 10 años en sistema de aislamiento al vacio VIP®'
       ]
     }
@@ -81,13 +82,13 @@ const data = [
     }
     ,
     {
-      id: 5,
-      image: IMG5,
-      title: 'Ultracongelador TRUST 690 L',
+      id: 3,
+      image: IMG3,
+      title: 'Ultracongelador TRUST 340 L',
       bullets: [
-        'Capacidad de 690 L (24.3 Pies)',
+        'Capacidad de 340 L (12 Pies)',
         'Display dual digital LCD con alarma visual y audible',
-        'Incluye 3 bandejas de acero inoxidable, 1 filtro contra polvo & 1 espátula de remoción de escarcha.',
+        'Incluye 1 bandeja de acero inoxidable, 1 filtro contra polvo & 1 espátula de remoción de escarcha.',
         'Garantía de 2 años en general, 5 años en compresores y 10 años en sistema de aislamiento al vacio VIP®'
       ]
     }
