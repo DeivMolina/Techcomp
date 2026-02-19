@@ -12,7 +12,7 @@
 
 .title-product{
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-top: 2rem;
     font-size: 30px;
     font-weight: 700;
@@ -57,8 +57,20 @@
 }
 
 .bullets {
-    list-style-type: disc;
-  }
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.bullets li {
+  margin-bottom: 6px;
+  line-height: 1.4;
+  list-style: disc;
+}
+
+/* 👇 Forzar color de la viñeta */
+.bullets li::marker {
+  color: #ffffff; /* o el color que uses en texto */
+}
 
 /*MEDIA QUERYS*/
 

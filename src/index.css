@@ -116,6 +116,27 @@ img{
     object-fit: cover;
 }
 
+.pt-15{
+    padding-top: 1.5rem;
+}
+
+.pt-10{
+    padding-top: 1rem;
+}
+
+.pb-15{
+    padding-bottom: 1.5rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+
 /*MEDIA QUERYS*/
 
 @media screen and (max-wdth: 1024) {

@@ -5,6 +5,12 @@ import IMG2 from '../../assets/portfolio2.png'
 import IMG3 from '../../assets/portfolio3.png'
 import IMG4 from '../../assets/portfolio4.png'
 
+import IMG_ULTRA from '../../assets/Ultracongeladores-productos-friolabo-techcomp-latino.webp'
+import IMG_COMBINADOS from '../../assets/Congeladores-combinados-productos-friolabo-techcomp-latino.webp'
+import IMG_REFRIGERADORES from '../../assets/Refrigeradores-productos-friolabo-techcomp-latino.webp'
+import IMG_HORNOS from '../../assets/Hornos-combinados-productos-friolabo-techcomp-latino.webp'
+import IMG_INCUBADORAS from '../../assets/Incubadoras-productos-friolabo-techcomp-latino.webp'
+
 const data = [
   
   {
@@ -38,6 +44,38 @@ const data = [
 
 const Portfolio = () => {
   return (
+    <>
+    <section style={{padding:'1.5rem', backgroundColor:' rgba(7, 146, 241, 0.46'}}>
+      <h3 className='title-portfolio'>Conoce nuestros productos nuevos</h3>
+      <div className=" portfolio__container-2">
+        <div className="portfolio-grid">
+          {/* Izquierda (grande) */}
+          <a className="tile tile--big" href="#" target="_blank" rel="noopener noreferrer">
+            <img src={IMG_ULTRA} alt="Ultracongeladores" />
+          </a>
+
+          {/* Derecha (4 pequeñas) */}
+          <a className="tile" href="#" target="_blank" rel="noopener noreferrer">
+            <img src={IMG_COMBINADOS} alt="Congeladores combinados" />
+          </a>
+
+          <a className="tile" href="#" target="_blank" rel="noopener noreferrer">
+            <img src={IMG_REFRIGERADORES} alt="Refrigeradores" />
+          </a>
+
+          <a className="tile" href="#" target="_blank" rel="noopener noreferrer">
+            <img src={IMG_HORNOS} alt="Hornos" />
+          </a>
+
+          <a className="tile" href="#" target="_blank" rel="noopener noreferrer">
+            <img src={IMG_INCUBADORAS} alt="Incubadoras" />
+          </a>
+          
+        </div>
+      </div>
+    </section>
+
+
     <section id='portfolio'>
       <h3 className='title-portfolio'>Nuestras Compañías</h3>
 
@@ -59,6 +97,7 @@ const Portfolio = () => {
         }
       </div>
     </section>
+    </>
   )
 }
 

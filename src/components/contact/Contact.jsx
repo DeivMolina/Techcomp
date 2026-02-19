@@ -6,6 +6,7 @@ import './contact.css'
 import {MdOutlineMarkEmailRead} from 'react-icons/md'
 import {FaWhatsapp} from 'react-icons/fa'
 import AVTR5 from '../../assets/Techomp_javier_arzate.png'
+import QRJavier from '../../assets/QR-javier.jpg'
 import {BsWhatsapp} from 'react-icons/bs'
 
 const Contact = () => {
@@ -65,9 +66,9 @@ const Contact = () => {
 
         <div className="contact__options">
           <article className="contact__option">
-          <div className="client__avatar">
-                <img src={AVTR5} alt="" />
-              </div>
+            <div className="qr">
+              <img src={QRJavier} alt="" style={{borderRadius:'30px'}} />
+            </div>
             <h4>Javier Arzate</h4>
             <a href="https://api.whatsapp.com/send?phone=5546208617&text=Hola,%20*¡Quiero%20cambiar%20mi%20ultracongelador!*" target="_blank" className='btn-wts'><BsWhatsapp/> Whatsapp</a> <br />
             <a className='btn btn-primary' href='tel:5570081678'>Contáctame</a>

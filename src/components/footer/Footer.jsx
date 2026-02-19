@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="footer-column">
           <a href='https://maps.app.goo.gl/gUJFjCdr4vdmkkRE6'>
-          <p><FiMapPin /> AV. Gustavo Baz no. 2160 esq. Mario Colin Colonia La Loma CP 54060 <br /> Tlalnepantla de Baz, Estado de México</p>
+          <p><FiMapPin /> Fernando Montes de Oca #21, CP. 54030, Estado de México</p>
           </a><br />
           <p>Aviso de Privacidad</p>
         </div>
